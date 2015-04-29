@@ -36,7 +36,7 @@ before_install:
 
 install:
         #Add app specific setup here or additional gcloud components here
-        gcloud components update preview
+        - printf 'y\n' | gcloud components update preview
 
 script:
         #Test and/or deploy your app with gcloud commands here!
