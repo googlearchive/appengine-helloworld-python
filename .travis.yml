@@ -35,7 +35,8 @@ before_install:
           fi
 
 install:
-        #Add app specific setup here
+        #Add app specific setup here or additional gcloud components here
+        gcloud components update preview
 
 script:
         #Test and/or deploy your app with gcloud commands here!
