@@ -36,8 +36,9 @@ before_install:
 
 install:
         #Add app specific setup here or additional gcloud components here
+        #Use -q to disable interaction
         gcloud -q components update preview
 
 script:
         #Test and/or deploy your app with gcloud commands here!
-        gcloud -q preview app run .
+        gcloud -q preview app run app.yaml
